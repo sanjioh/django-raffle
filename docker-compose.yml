@@ -1,0 +1,10 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:12
+    ports:
+      - "15432:5432"
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: raffle
